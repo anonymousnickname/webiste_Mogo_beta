@@ -20,8 +20,31 @@ body {
     background-size: cover;
     width: 100%;
     min-height: 100vh;
-    height: 100vh;
     color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .header__link {
+        margin-right: 15px;
+    }
+
+    .intro__footer__link::before{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .intro__subtittle {
+        font-size: 40px;
+    }
+
+    .intro__tittle {
+        font-size: 70px;
+    }
 }
 
 .header {
@@ -147,19 +170,6 @@ body {
     position: relative;
     transition: color .1s linear;
     font-size: 17px;
-}
-
-.intro__footer__link::before {
-    content: "";
-    display: block;
-    width: 150px;
-    height: 2px;
-    background-color: rgb(255, 107, 61, 0.5);
-    position: absolute;
-    top: -10px;
-    left: 0;
-    z-index: 1;
-    transition: opacity .1s linear;
 }
 
 .intro__footer__link:hover {
