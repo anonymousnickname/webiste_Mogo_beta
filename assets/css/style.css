@@ -15,6 +15,15 @@ body {
 }
 
 /* Components */
+hr {
+    border: none;
+    background-color: #e5e5e5;
+    width: 100%;
+    height: 1px;
+    display: block;
+    margin: 40px 0;
+
+}
 .btn {
     display: inline-block;
     vertical-align: top;
@@ -197,16 +206,23 @@ body {
     color: #333;
 }
 
+.section--devices {
+    background: url("../img/design/background_design.jpg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
 .section__header {
     widows: 100%;
     max-width: 950px;
-    margin: 0 auto 40px;
+    margin: 0 auto 80px;
     text-align: center;
 }
 
 .section__suptittle {
     font-size: 24px;
     font-family: 'Kaushan Script', cursive;
+    margin-bottom: 10px;
 }
 
 .setcion__tittle {
@@ -308,4 +324,49 @@ body {
 .stat__text {
     font-size: 14px;
     text-transform: uppercase;
+}
+/* Servises */
+
+.services {
+    display: flex;
+}
+
+.services__item {
+    flex: 1 1 0;
+    padding-left: 70px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.services__icon {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 1;
+}
+
+.services__tittle {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.services__text {
+    color: #999;
+}
+
+/* Design */
+
+.design__ipad {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(30%);
+}
+
+.design__iphone {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(120%);
 }
