@@ -641,7 +641,12 @@ hr {
     transition: opacity 0.2s linear;
 }
 
+.works__info i {
+    font-size: 20px;
+}
+
 .works__tittle {
+    margin-top: 10px;
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 5px;
