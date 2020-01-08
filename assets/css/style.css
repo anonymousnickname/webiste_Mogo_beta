@@ -209,6 +209,7 @@ hr {
 .section {
     padding: 80px 0;
     color: #333;
+    overflow: hidden;
 }
 
 .section--devices {
@@ -752,6 +753,7 @@ hr {
 /* Blog */
 .blog {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -866,8 +868,12 @@ hr {
 .footer {
     padding-top: 65px;
     background-color: #f8f8f8;
+
 }
 
+.footer__col {
+    padding: 0 15px;
+}
 .footer__col--first {
     width: 40%;
 }
@@ -882,8 +888,10 @@ hr {
 
 .footer__inner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 65px;
+    margin: 0 -15px;
 }
 
 .footer__logo {
@@ -1027,18 +1035,14 @@ hr {
 }
 
 .instagram__item {
-    width: 32.7%;
+    width: 33%;
     border-bottom: 1px solid #fff;
 }
 
 .instagram__item img {
     display: block;
-}
-
-.instagram__text {
-    font-weight: 300;
-    font-style: italic;
-    font-size: 14px;
+    max-width: 100%;
+    height: auto;
 }
 
 .copyright {
@@ -1146,6 +1150,29 @@ hr {
     .clients__item:last-child {
         margin-bottom: 0;
     }
+
+    /* footer */
+    .footer__col--first {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer__col--second {
+        width: 50%;
+    }
+
+    .footer__col--third {
+        width: 50% ;
+    }
+
+    .instagram {
+        justify-content: flex-start;
+    }
+
+    .instagram__item {
+        width: auto;
+        border-right: 1px solid #fff;
+    }
 }
 
 @media (max-width: 770px) {
@@ -1244,6 +1271,31 @@ hr {
         flex: none;
         width: 50%;
     }
+
+    /* Blog */
+    .blog {
+        width: 380px;
+        margin: 0 auto;
+    }
+    .blog__item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .blog__item:last-child{
+        margin-bottom: 0;
+    }
+
+    /* footer */
+
+    .footer__col--second {
+        width: 100%;
+    }
+
+    .footer__col--third {
+        width: 100% ;
+    }
+
 }
 
 @media (max-width: 575px) {
@@ -1319,9 +1371,20 @@ hr {
     .logos__image {
         margin: 0 auto;
     }
+
+    .design__iphone {
+        display: none;
+    }
+
+    .design__ipad {
+        padding: 0 10px;
+        transform: translateX(50%);
+       
+    }
+
 }
 
-@media (max-width: 400px) {
+@media (max-width: 410px) {
 
     /* Intro */
     .intro__tittle {
@@ -1351,5 +1414,28 @@ hr {
 
     .clients__text::before {
         margin: 15px auto;
+    }
+
+   .blog {
+       margin: 0 auto;
+   }
+
+   .subscribe {
+       flex-wrap: wrap;
+       max-width: none;
+   }
+
+   .subscribe__input {
+       margin-bottom: 10px;
+       width: 100%;
+       border-right: 1px solid #a0f0e1; ;
+   }
+
+   .subscribe__button {
+    width: 100%;
+}
+
+    .blog {
+    width: auto;
     }
 }
