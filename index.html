@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/4395ce229d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/normilize.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -16,36 +15,40 @@
 
 <body>
     <!-- Header -->
-    <header class="header">
+    <header id="header" class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo">MoGo</div>
-                <nav class="nav">
-                    <a href="#" class="nav__link active">About</a>
-                    <a href="#" class="nav__link">Service</a>
-                    <a href="#" class="nav__link">Work</a>
-                    <a href="#" class="nav__link">Blog</a>
-                    <a href="#" class="nav__link">Contact</a>
+                <div class="header__logo" data-scroll="#intro" id="mogo">MoGo</div>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav__link active" data-scroll="#about">About</a>
+                    <a href="#" class="nav__link" data-scroll="#service">Service</a>
+                    <a href="#" class="nav__link" data-scroll="#work">Work</a>
+                    <a href="#" class="nav__link" data-scroll="#blog">Blog</a>
+                    <a href="#" class="nav__link" data-scroll="#contact">Contact</a>
                     <a href="#" class="nav__link">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
-                    <a href="#" class="nav__link">
+                    <a href="#" class="nav__link" >
                         <i class="fas fa-search"></i>
                     </a>
                 </nav>
+
+                <div class="nav-toggle" id="nav-toggle" >
+                    <span class="nav-toggle__item"></span>
+                </div>
             </div>
         </div>
     </header>
     <!-- //Header// -->
 
     <!-- Intro -->
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <h2 class="intro__suptittle">Creative Template</h2>
                 <h1 class="intro__tittle">Welcome to MoGO</h1>
                 <div class="intro__btn">
-                    <a href="#" class="btn">Learn More</a>
+                    <a href="#about" class="btn" >Learn More</a>
                 </div>
             </div>
         </div>
@@ -78,7 +81,7 @@
     <!-- //Slider// -->
 
     <!-- Section about us -->
-    <section class="section">
+    <section class="section" id="about">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptittle">What we do</h3>
@@ -161,7 +164,7 @@
     <!-- //Statistics// -->
 
     <!-- Section services-->
-    <section class="section">
+    <section class="section" id="service">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptittle">We work with</h3>
@@ -225,18 +228,17 @@
                 <h3 class="section__suptittle">For all devices</h3>
                 <h2 class="setcion__tittle">Unique design</h2>
             </div>
-            <div class="design__container">
-            <div class="design__inner-container">
+            
+          
             <img class="design__ipad" src="assets/img/design/ipad.png" alt="ipad">
             <img class="design__iphone" src="assets/img/design/iphone.png" alt="iphone">
-        </div>
+        
     </div>
-        </div>
     </section>
     <!-- //Section design// -->
 
     <!-- Section what we do -->
-    <section class="section">
+    <section class="section" id="work">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptittle">What we do</h3>
@@ -257,8 +259,8 @@
                 <div class="wedo__item">
                     <!-- accordion -->
                     <div class="accordion">
-                        <div class="accordion__item ">
-                            <div class="accordion__header">
+                        <div class="accordion__item">
+                            <div class="accordion__header" >
                                 <img src="assets/img/do/photography.png" alt="photography" class="accordion__icon">
                                 <div class="accordion__tittle">photography</div>
                             </div>
@@ -273,11 +275,11 @@
                             </div>
                         </div>
                         <div class="accordion__item active">
-                            <div class="accordion__header">
+                            <div class="accordion__header" >
                                 <img src="assets/img/do/creativity.png" alt="creativity" class="accordion__icon">
                                 <div class="accordion__tittle">creativity</div>
                             </div>
-                            <div class="accordion__content">
+                            <div class="accordion__content" >
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -288,11 +290,11 @@
                             </div>
                         </div>
                         <div class="accordion__item">
-                            <div class="accordion__header">
+                            <div class="accordion__header" >
                                 <img src="assets/img/do/web_design.png" alt="web design" class="accordion__icon">
                                 <div class="accordion__tittle">web design</div>
                             </div>
-                            <div class="accordion__content">
+                            <div class="accordion__content" >
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -313,8 +315,7 @@
     <div class="section section--gray">
         <div class="container">
             <div class="reviews">
-                <a href="#" class="reviews__button reviews__button--prev">Prev</a>
-                <a href="#" class="reviews__button reviews__button--next">Next</a>
+                
                 <div class="reviews__item">
                     <img src="assets/img/reviews/review_avatar.png" alt="review" class="reviews__photo">
                     <div class="reviews__text">
@@ -541,15 +542,13 @@
     <div class="section">
         <div class="container">
             <div class="reviews">
-                <a href="#" class="reviews__button reviews__button--prev">Prev</a>
-                <a href="#" class="reviews__button reviews__button--next">Next</a>
                 <div class="reviews__item">
-                    <img src="assets/img/reviews/review_avatar.png" alt="review" class="reviews__photo">
+                    <img src="assets/img/reviews/review_avatar2.jpg" alt="review" class="reviews__photo">
                     <div class="reviews__text">
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        “Lorem vivus del vitos consectetur adipiscing elit,
+                        sed do eiusmod tempor mentos labridos et dolore magna
                         aliqua. Ut enim ad minim veniam, quis nostrud exe.“</div>
-                    <div class="reviews__author">John Doe</div>
+                    <div class="reviews__author">Sarah O'Neil</div>
                 </div>
             </div>
         </div>
@@ -610,7 +609,7 @@
     </section>
     <!-- //Section what people say// -->
     <!-- Section blog -->
-    <section class="section">
+    <section class="section" id="blog">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptittle">Our stories</h3>
@@ -715,7 +714,7 @@
     <!-- //Section blog// -->
 
     <!-- Section map -->
-    <section class="section section--map">
+    <section class="section section--map" id="contact">
         <div class="container">
             <div class="map">
                 <h2 class="map__tittle">
@@ -843,6 +842,8 @@
         </div>
     </footer>
     <!-- //Section footer// -->
-</body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
 
 </html>
